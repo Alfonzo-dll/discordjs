@@ -14,4 +14,4 @@ cmdhandler.setCommandFolder("./commands")
 cmdhandler.setPrefix("?");
 cmdhandler.loader();
 
-client.login("Nzk2Njk2MTQzMzA3NjAzOTg5.X_brGg.BiBXDF4sa2ecu2xH2yturkn9tXE");
+client.login("token");
