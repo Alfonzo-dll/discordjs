@@ -33,8 +33,7 @@ client.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === 'dm') return;
     
-    let prefix = await db.get(`prefix_${message.guild.id}`)
-    if(prefix === null) prefix = default_prefix;
+    let prefix = default_prefix;
 
     if(message.content.startsWith(prefix)) {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
